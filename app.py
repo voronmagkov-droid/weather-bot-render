@@ -20,10 +20,10 @@ def health():
     return "OK"
 
 
-TOKEN = os.environ.get("TEKEGRAM_TOKEN")
+TOKEN = os.environ.get("TELEGRAM_TOKEN")
 WEATHER_API_KEY = os.environ.get("WEATHER_API_KEY")
 if not TOKEN:
-    raise ValueError("Нет переменной TELAGRAM_TOKEN!")
+    raise ValueError("Нет переменной TELEGRAM_TOKEN!")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
