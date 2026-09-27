@@ -87,7 +87,7 @@ async def main():
 def start_bot():
     asyncio.run(main())
 
-threading.Thread(target=start_bot, daemin=True).start()
+threading.Thread(target=start_bot, daemon=True).start()
 
 
 
